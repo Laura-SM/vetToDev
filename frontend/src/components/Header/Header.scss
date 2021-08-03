@@ -1,0 +1,23 @@
+@import './../../styles/global.scss';
+@import './../../styles/mixin.scss';
+
+.header {
+	@include flex-content(flex, row, space-between, flex-end);
+	margin: 10px 50px;
+	@include font(20px, normal);
+}
+
+.logo {
+	@include flex-content;
+	margin: 20px;
+}
+
+.top-nav {
+	list-style: none;
+	@include flex-content;
+	
+
+	&__item {
+		margin: 20px;
+	}
+}
