@@ -7,7 +7,6 @@ function Header() {
       <span className="logo">vetToDev</span>
       <ul className="top-nav">
         <li className="top-nav__item">home</li>
-        <li className="top-nav__item">contact</li>
         <li className="top-nav__item">blog</li>
       </ul>
     </header>
