@@ -1,0 +1,7 @@
+@import './../../styles/colors.scss';
+@import './../../styles/global.scss';
+@import './../../styles/mixin.scss';
+
+.experience {
+	@include section;
+}
