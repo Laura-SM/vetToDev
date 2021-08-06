@@ -1,0 +1,51 @@
+@import './../../styles/colors.scss';
+@import './../../styles/global.scss';
+@import './../../styles/mixin.scss';
+
+.aboutMe {
+	@include section;
+
+	p {
+		@include font(20px, lighter);
+	}
+}
+
+.generalInformation {
+	@include section;
+	@include flex-content(flex, column);
+
+	h3 {
+		@include font(26px, lighter);
+		margin-bottom: 20px;
+	}
+}
+
+.personalInformation-and-languages-container {
+	@include flex-content;
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+	border-bottom: solid 1px $color-gray-dark
+}
+
+.personalInformation {
+	max-width: 50%;
+}
+
+.languages {
+	max-width: 50%;
+}
+
+dl {
+	display: flex;
+	flex-flow: row wrap;
+	// width: 300px;
+}
+dt {
+	flex-basis: 35%;
+	padding: 6px;
+	@include font(12px, bold)
+}
+dd {
+	flex-basis: 55%;
+	@include font(18px, lighter);
+}
