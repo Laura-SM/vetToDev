@@ -1,0 +1,36 @@
+@import './../../styles/colors.scss';
+@import './../../styles/global.scss';
+@import './../../styles/mixin.scss';
+
+.card {
+	@include flex-content(flex, column, center, center);
+	width: 300px;
+	height: 400px;
+	background-color: $color-blue-light;
+	margin: 0 30px;
+	box-shadow: -10px 10px 10px $color-shadow;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 60px;
+
+	&__image {
+		width: 200px;
+		border-radius: 50%;
+		margin: 10px;
+	}
+
+	&__name {
+		@include font(20px, bold);
+		margin: 10px;
+	}
+
+	&__profession {
+		@include font(20px, lighter);
+		color: $color-black;
+		margin: 10px;
+	}
+}
+
+i {
+	margin: 10px;
+}
