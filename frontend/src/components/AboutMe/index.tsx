@@ -10,7 +10,7 @@ function AboutMe() {
         <p>{RESUME_DATA.aboutMe}</p>
       </div>
       <div className="generalInformation">
-        <div className="personalInformation-and-languages-container">
+        <div className="personalInformationAndLanguagesContainer">
           <div className="personalInformation">
             <h3>personal information</h3>
             <dl>
