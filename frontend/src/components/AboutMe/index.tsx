@@ -5,7 +5,7 @@ import './AboutMe.scss';
 function AboutMe() {
   return (
     <>
-      <div className="aboutMe">
+      <div className="aboutMe" id="aboutMe">
         <h2>ABOUT ME</h2>
         <p>{RESUME_DATA.aboutMe}</p>
       </div>
