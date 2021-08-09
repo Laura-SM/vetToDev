@@ -1,3 +1,5 @@
+@import './colors';
+
 @mixin flex-content ($display:flex, $flex-direction:row, $justify-content:unset, $align-items:unset){
 	display: $display;
 	flex-direction: $flex-direction;
@@ -5,7 +7,18 @@
 	align-items: $align-items;
 }
 
-@mixin font ($font-size, $font-weight) {
+@mixin font ($font-size: 20px, $font-weight: normal, $color: $color-black, $line-height: 1.5em) {
 	font-size: $font-size;
 	font-weight: $font-weight;
+	color: $color;
+	line-height: $line-height
+}
+
+@mixin section ($background-color: $color-white, $border-style: solid, $border-width: 1px, $border-color: $color-gray-dark, $padding: 50px, $margin-bottom: 10px) {
+	background-color: $background-color;
+	border-style: $border-style;
+	border-width: $border-width;
+	border-color: $border-color;
+	padding: $padding;
+	margin-bottom: $margin-bottom;
 }

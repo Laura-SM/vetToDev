@@ -1,0 +1,15 @@
+@import './../../styles/colors.scss';
+@import './../../styles/global.scss';
+@import './../../styles/mixin.scss';
+
+.globalContainer {
+	@include flex-content(flex, row, center, top);
+}
+
+.sectionsContainer {
+	max-width: 800px;
+}
+
+h2 {
+	margin-bottom: 20px;
+}
