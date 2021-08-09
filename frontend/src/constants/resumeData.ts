@@ -44,7 +44,7 @@ const RESUME_DATA = {
       company: 'Hospital Clínic Veterinari de la UAB',
       startDate: 2011,
       endDate: 2012,
-      description: ['op postgraduate training program with 4 admissions a year', 'Night and weekend guard shifts', 'Take part in the training of students of the Veterinary Degree and the Veterinary Technical Assistant Course', 'Intern vets delegate']
+      description: ['Top postgraduate training program with 4 admissions a year', 'Night and weekend guard shifts', 'Take part in the training of students of the Veterinary Degree and the Veterinary Technical Assistant Course', 'Intern vets delegate']
     }
   ],
   education: [
