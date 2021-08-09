@@ -5,3 +5,41 @@
 .experience {
 	@include section;
 }
+
+.job {
+	@include flex-content;
+
+	&__date {
+		width: 20%;
+		@include flex-content(flex, row, flex-end, flex-start);
+		padding-right: 20px;
+		padding-top: 5px;
+	}
+
+	&__info {
+		width: 70%;
+		@include flex-content(flex, column, center);
+		border-left: 1px solid $color-blue-dark;
+		padding-left: 20px;
+		padding-bottom: 50px;
+	}
+
+	&__title {
+		@include font;
+	}
+
+	&__company {
+		@include font(18px, lighter);
+	}
+
+	&__description {
+		@include font(16px, normal);
+		padding-left: 20px;
+
+		li {
+			list-style-position: outside;
+			list-style-type: circle;
+	
+		}
+	}
+}

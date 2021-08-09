@@ -4,18 +4,24 @@ import './Experience.scss';
 
 function Experience() {
   return (
-    <div className="experience">
+    <div className="experience" id="experience">
       <h2>EXPERIENCE</h2>
-      {RESUME_DATA.experience.map((job) => (
-        <div>
-          <span>{job.startDate}</span>
-          <span>{job.endDate}</span>
-          <span>{job.title}</span>
-          <span>{job.company}</span>
-          <span>{job.description}</span>
-        </div>
-      ))}
-      <div />
+      <div className="jobs">
+        {RESUME_DATA.experience.map((job) => (
+          <div className="job">
+            <div className="job__date">
+              {job.startDate}
+              -
+              {job.endDate}
+            </div>
+            <div className="job__info">
+              <span className="job__title">{job.title}</span>
+              <span className="job__company">{job.company}</span>
+              <ul className="job__description">{job.description.map((description) => (<li>{description}</li>))}</ul>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
