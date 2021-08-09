@@ -2,11 +2,11 @@
 @import './../../styles/global.scss';
 @import './../../styles/mixin.scss';
 
-.global-container {
-	@include flex-content;
+.globalContainer {
+	@include flex-content(flex, row, center, top);
 }
 
-.resume-container {
+.sectionsContainer {
 	max-width: 800px;
 }
 
