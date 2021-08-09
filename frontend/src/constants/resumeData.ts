@@ -78,7 +78,7 @@ const RESUME_DATA = {
   awards: [{
     title: 'Oral communication',
     description: 'XIII Congreso Internacional de Medicina y Cirugía Equina',
-    issudeDate: 2012
+    date: 2012
   }]
 };
 export default RESUME_DATA;
