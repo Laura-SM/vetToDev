@@ -2,8 +2,11 @@ import React from 'react';
 import Card from '../Card';
 import AboutMe from '../AboutMe';
 import Experience from '../Experience';
-import './Resume.scss';
+import Education from '../Education';
 import LateralNavigator from '../LateralNavigator';
+import Awards from '../Awards';
+import Blog from '../Blog';
+import './Resume.scss';
 
 function Resume() {
   return (
@@ -14,6 +17,9 @@ function Resume() {
       <div className="sectionsContainer">
         <AboutMe />
         <Experience />
+        <Education />
+        <Awards />
+        <Blog />
       </div>
       <div className="lateralNavigatorContainer">
         <LateralNavigator />

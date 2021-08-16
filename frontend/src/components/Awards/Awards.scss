@@ -1,0 +1,29 @@
+@import './../../styles/colors.scss';
+@import './../../styles/global.scss';
+@import './../../styles/mixin.scss';
+
+.awards {
+	@include section;
+}
+
+.award {
+	@include flex-content(flex, column);
+
+	&__title {
+		@include font;
+	}
+
+	&__information {
+		@include flex-content(flex, row);
+		@include font(18px, lighter);
+	}
+
+	&__description {
+		margin-right: 20px;
+	}
+
+	&__date {
+		margin-left: 20px;
+		@include font(18px);
+	}
+}

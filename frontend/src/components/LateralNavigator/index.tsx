@@ -28,20 +28,20 @@ function LateralNavigator() {
         <span className="lateralNavigator__tooltip">Education</span>
       </li>
       <li className="lateralNavigator__item">
-        <a href="#blog">
-          <span className="material-icons-outlined md-36">
-            speaker_notes
-          </span>
-        </a>
-        <span className="lateralNavigator__tooltip">Blog</span>
-      </li>
-      <li className="lateralNavigator__item">
         <a href="#awards">
           <span className="material-icons-outlined md-36">
             emoji_events
           </span>
         </a>
         <span className="lateralNavigator__tooltip">Awards</span>
+      </li>
+      <li className="lateralNavigator__item">
+        <a href="#blog">
+          <span className="material-icons-outlined md-36">
+            speaker_notes
+          </span>
+        </a>
+        <span className="lateralNavigator__tooltip">Blog</span>
       </li>
       <li className="lateralNavigator__item">
         <a href="#contact">
