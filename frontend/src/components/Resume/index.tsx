@@ -5,6 +5,7 @@ import Experience from '../Experience';
 import Education from '../Education';
 import LateralNavigator from '../LateralNavigator';
 import Awards from '../Awards';
+import Blog from '../Blog';
 import './Resume.scss';
 
 function Resume() {
@@ -18,6 +19,7 @@ function Resume() {
         <Experience />
         <Education />
         <Awards />
+        <Blog />
       </div>
       <div className="lateralNavigatorContainer">
         <LateralNavigator />
