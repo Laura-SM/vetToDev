@@ -74,7 +74,7 @@ const RESUME_DATA = {
     }
   ],
   competencies: ['CSS/SASS', 'HTML', 'Javascript', 'React', 'React Native', 'Redux', 'Jest', 'NodeJS', 'MongoDB'],
-  languages: ['Catalan', 'Spanish', 'English', 'Italian'],
+  languages: [{ language: 'Catalan', level: 'native', levelNumber: 10 }, { language: 'Spanish', level: 'native', levelNumber: 9 }, { language: 'English', level: 'fluent', levelNumber: 7 }, { language: 'Italian', level: 'intermediate', levelNumber: 4 }],
   awards: [{
     title: 'Oral communication',
     description: 'XIII Congreso Internacional de Medicina y Cirugía Equina',
