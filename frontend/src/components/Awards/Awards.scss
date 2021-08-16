@@ -9,26 +9,21 @@
 .award {
 	@include flex-content(flex, column);
 
-	&__date {
-		width: 20%;
-		@include flex-content(flex, row, flex-end, flex-start);
-		padding-right: 20px;
-		padding-top: 5px;
-	}
-
-	// &__info {
-	// 	width: 70%;
-	// 	@include flex-content(flex, column, center);
-	// 	border-left: 1px solid $color-blue-dark;
-	// 	padding-left: 20px;
-	// 	padding-bottom: 50px;
-	// }
-
 	&__title {
 		@include font;
 	}
 
-	&__description {
+	&__information {
+		@include flex-content(flex, row);
 		@include font(18px, lighter);
+	}
+
+	&__description {
+		margin-right: 20px;
+	}
+
+	&__date {
+		margin-left: 20px;
+		@include font(18px);
 	}
 }

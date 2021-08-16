@@ -9,9 +9,11 @@ function Awards() {
       {RESUME_DATA.awards.map((award) => (
         <div className="award">
           <span className="award__title">{award.title}</span>
-          <span className="award__description">{award.description}</span>
-          <span className="award__date">{award.date}</span>
-
+          <div className="award__information">
+            <span className="award__description">{award.description}</span>
+            <span>|</span>
+            <span className="award__date">{award.date}</span>
+          </div>
         </div>
       ))}
     </div>
