@@ -17,7 +17,6 @@ function Awards() {
         </div>
       ))}
     </div>
-
   );
 }
 

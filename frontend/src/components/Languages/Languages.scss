@@ -1,0 +1,41 @@
+@import './../../styles/colors.scss';
+@import './../../styles/global.scss';
+@import './../../styles/mixin.scss';
+
+.languages {
+	@include section;
+
+	p {
+		@include font(20px, lighter);
+	}
+}
+
+.language {
+	@include flex-content(flex, column);
+	margin: 15px 0px;
+	@include font(18px);
+
+	&__level {
+		@include flex-content(flex, row, flex-start, center);
+		@include font(18px, lighter);
+		
+	}
+
+	&__levelDots {
+		@include flex-content(flex, row, center, center);
+		margin-right: 10px;
+	}
+}
+
+
+.material-icons.md-light{
+	font-size: 18px;
+	color: $color-blue-dark;
+	margin: 2px;
+}
+
+.material-icons-outlined.md-light{
+	font-size: 18px;
+	color: $color-blue-dark;
+	margin: 2px;
+}

@@ -12,19 +12,19 @@
 	list-style: none;
 
 	&__image {
-		width: 36px;
+		width: 30px;
 		border-radius: 50%;
-		margin-bottom: 30px;
+		margin: 10px;
 	}
 
-	.material-icons-outlined.md-36 { 
-		font-size: 36px;
-		margin-bottom: 30px;
+	.material-icons-outlined { 
+		font-size: 30px;
+		margin: 10px;
 	}
 
 	&__tooltip {
 		visibility: hidden;
-		width: 100px;
+		width: 150px;
 		height: 35px;
 		background-color: $color-white;
 		@include font(18px, lighter);
@@ -55,5 +55,4 @@
 	a:hover, a:active {
 		color: transparentize($color: $color-black, $amount: 0.5)
 	}
-
 }

@@ -3,7 +3,6 @@ import './LateralNavigator.scss';
 
 function LateralNavigator() {
   return (
-
     <ul className="lateralNavigator">
       <li className="lateralNavigator__item">
         <a href="#aboutMe">
@@ -21,11 +20,27 @@ function LateralNavigator() {
       </li>
       <li className="lateralNavigator__item">
         <a href="#education">
-          <span className="material-icons-outlined md-36">
+          <span className="material-icons-outlined">
             school
           </span>
         </a>
         <span className="lateralNavigator__tooltip">Education</span>
+      </li>
+      <li className="lateralNavigator__item">
+        <a href="#competencies">
+          <span className="material-icons-outlined md-36">
+            verified
+          </span>
+        </a>
+        <span className="lateralNavigator__tooltip">Competencies</span>
+      </li>
+      <li className="lateralNavigator__item">
+        <a href="#languages">
+          <span className="material-icons-outlined md-36">
+            language
+          </span>
+        </a>
+        <span className="lateralNavigator__tooltip">Languages</span>
       </li>
       <li className="lateralNavigator__item">
         <a href="#awards">
@@ -52,7 +67,6 @@ function LateralNavigator() {
         <span className="lateralNavigator__tooltip">Contact</span>
       </li>
     </ul>
-
   );
 }
 

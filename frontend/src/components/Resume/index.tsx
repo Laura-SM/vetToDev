@@ -3,9 +3,12 @@ import Card from '../Card';
 import AboutMe from '../AboutMe';
 import Experience from '../Experience';
 import Education from '../Education';
-import LateralNavigator from '../LateralNavigator';
+import Competencies from '../Competencies';
+import Languages from '../Languages';
 import Awards from '../Awards';
 import Blog from '../Blog';
+import Contact from '../Contact';
+import LateralNavigator from '../LateralNavigator';
 import './Resume.scss';
 
 function Resume() {
@@ -18,8 +21,11 @@ function Resume() {
         <AboutMe />
         <Experience />
         <Education />
+        <Competencies />
+        <Languages />
         <Awards />
         <Blog />
+        <Contact />
       </div>
       <div className="lateralNavigatorContainer">
         <LateralNavigator />

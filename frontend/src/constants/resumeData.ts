@@ -6,7 +6,7 @@ const RESUME_DATA = {
     phoneNumber: '659 89 16 36',
     website: 'vettodev.com',
     gitHub: 'github.com/Laura-SM',
-    linkedin: 'linkedin.com/laura-sabater-musach',
+    linkedIn: 'linkedin.com/laura-sabater-musach',
     city: 'Barcelona'
   },
   aboutMe: 'After working for several years in the veterinary field, I decided to make a change in my professional life. I was looking for a career where I could learn every day, where I would be valued and where there would be a wide range of job opportunities. That’s when I got to know the world of web programming. I discovered how amazing it is to create anything with a language other than what we are used to. I was captivated by the logic needed to make everything work, as well as the organization of the code and the use of creativity to get new features.',
