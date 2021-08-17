@@ -1,4 +1,3 @@
-@import './../../styles/colors.scss';
 @import './../../styles/global.scss';
 @import './../../styles/mixin.scss';
 
@@ -8,84 +7,4 @@
 	p {
 		@include font(20px, lighter);
 	}
-
-	h3 {
-		@include font(26px, lighter);
-		margin-bottom: 20px;
-	}
-}
-
-.personalInformationAndLanguagesContainer {
-	@include flex-content;
-	padding-top: 25px;
-	margin-top: 25px;
-	border-top: solid 1px $color-gray-dark;
-}
-
-.personalInformation {
-	max-width: 50%;
-
-	dl {
-		display: flex;
-		flex-flow: row wrap;
-	}
-	
-	dt {
-		flex-basis: 35%;
-		padding: 6px;
-		@include font(12px, bold)
-	}
-	
-	dd {
-		flex-basis: 55%;
-		@include font(18px, lighter);
-	}
-}
-
-.languages {
-	max-width: 50%;
-}
-
-.language {
-	@include flex-content(flex, column);
-	margin: 5px;
-	@include font(18px);
-
-	&__level {
-		@include flex-content(flex, row, flex-start, center);
-		@include font(18px, lighter);
-		
-	}
-
-	&__levelDots {
-		@include flex-content(flex, row, center, center);
-		margin-right: 10px;
-	}
-}
-
-.competencies {
-	padding-top: 25px;
-	margin-top: 25px;
-	border-top: solid 1px $color-gray-dark;
-	
-
-	&__list {
-		list-style-type: none;
-		height: 100px;
-		@include flex-content(flex, column);
-		flex-wrap: wrap;
-	}
-
-}
-
-.material-icons.md-light{
-	font-size: 18px;
-	color: $color-blue-dark;
-	margin: 2px;
-}
-
-.material-icons-outlined.md-light{
-	font-size: 18px;
-	color: $color-blue-dark;
-	margin: 2px;
 }
