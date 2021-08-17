@@ -1,0 +1,32 @@
+@import './../../styles/colors.scss';
+@import './../../styles/global.scss';
+@import './../../styles/mixin.scss';
+
+.competencies {
+	@include section;
+
+	p {
+		@include font(20px, lighter);
+	}
+
+	&__list {
+		list-style-type: none;
+		@include flex-content(flex, column, center, flex-start);
+		flex-wrap: wrap;
+		height: 100px;
+	}
+
+	&__item {
+		@include flex-content(flex, row, flex-start, center);
+		margin: 2px;
+	}
+}
+
+.competencie {
+	@include font(18px, lighter);
+	margin-left: 2px;
+}
+
+.material-icons-outlined.done {
+	color: $color-blue-dark;
+}
