@@ -13,9 +13,7 @@ function Blog() {
       <div className="blog__link">
         <a href="/blog">Visit my blog!</a>
       </div>
-
     </div>
-
   );
 }
 
