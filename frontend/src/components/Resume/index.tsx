@@ -13,11 +13,11 @@ import './Resume.scss';
 
 function Resume() {
   return (
-    <div className="globalContainer">
-      <div className="cardContainer">
+    <div className="resume">
+      <div className="resume__card">
         <Card />
       </div>
-      <div className="sectionsContainer">
+      <div className="resume__sections">
         <AboutMe />
         <Experience />
         <Education />
@@ -27,7 +27,7 @@ function Resume() {
         <Blog />
         <Contact />
       </div>
-      <div className="lateralNavigatorContainer">
+      <div className="resume__navigator">
         <LateralNavigator />
       </div>
     </div>

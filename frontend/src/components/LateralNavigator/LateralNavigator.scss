@@ -3,13 +3,16 @@
 @import './../../styles/mixin.scss';
 
 .lateralNavigator {
-	@include flex-content(flex, column, center, center);
-	width: 40px;
-	margin: 0 30px;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 60px;
-	list-style: none;
+	// @include flex-content(flex, row, center, center);
+	
+	&__list {
+		@include flex-content;
+		list-style: none;	
+	}
+
+	&__item {
+		height: 50px;
+	}
 
 	&__image {
 		width: 30px;
@@ -54,5 +57,18 @@
 	
 	a:hover, a:active {
 		color: transparentize($color: $color-black, $amount: 0.5)
+	}
+
+	@media screen and (min-width: 1024px) {
+		width: auto;
+		margin: 0 30px;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 60px;
+		right: 60px;
+
+		&__list {
+			@include flex-content(flex, column, center, center);
+		}
 	}
 }

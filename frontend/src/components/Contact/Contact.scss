@@ -3,7 +3,7 @@
 @import './../../styles/mixin.scss';
 
 .contact {
-	@include section;
+	@include small-section;
 
 	&__item {
 		@include flex-content(flex, row, flex-start, center);
@@ -41,5 +41,9 @@
 				color: transparentize($color: $color-black, $amount: 0.5)
 			}
 		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		@include section;
 	}
 }

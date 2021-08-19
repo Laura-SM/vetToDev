@@ -3,32 +3,60 @@
 @import './../../styles/mixin.scss';
 
 .education {
-	@include section;
-}
+	@include small-section;
 
-.studies {
-	@include flex-content;
-
-	&__date {
-		width: 20%;
-		@include flex-content(flex, row, flex-end, flex-start);
-		padding-right: 20px;
-		padding-top: 5px;
-	}
-
-	&__info {
-		width: 70%;
-		@include flex-content(flex, column, center);
+	.studies {
+		@include flex-content(flex, column);
 		border-left: 1px solid $color-blue-dark;
 		padding-left: 20px;
-		padding-bottom: 50px;
+		margin: 25px 0px;
+
+		&__date {
+			background-color: $color-blue-light;
+			width: max-content;
+			padding: 5px 10px;
+		}
+
+		&__info {
+			@include flex-content(flex, column, center);
+			margin-top: 10px;
+		}
+
+		&__school {
+			@include font;
+		}
+
+		&__degree {
+			@include font(18px, lighter);
+			margin: 5px 0;
+		}
 	}
 
-	&__school {
-		@include font;
-	}
+	@media screen and (min-width: 1024px) {
+		@include section;
 
-	&__degree {
-		@include font(18px, lighter);
+		.studies {
+			@include flex-content;
+			border-left: none;
+			padding-left: 0;
+			margin: 0;
+	
+			&__date {
+				background-color: transparent;
+				width: 20%;
+				padding-right: 20px;
+				padding-top: 5px;
+				@include flex-content(flex, row, flex-end, flex-start);
+			}
+	
+			&__info {
+				@include flex-content(flex, column, center);
+				margin-top: 0;
+				width: 70%;
+				border-left: 1px solid $color-blue-dark;
+				padding-left: 20px;
+				padding-bottom: 50px;
+			}
+		}
 	}
 }
