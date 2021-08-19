@@ -2,14 +2,27 @@
 @import './../../styles/global.scss';
 @import './../../styles/mixin.scss';
 
-.globalContainer {
-	@include flex-content(flex, row, center, top);
-}
+.resume {
+	@include flex-content(flex, column);
+	width: 100%;
 
-.sectionsContainer {
-	max-width: 800px;
-}
+	h2 {
+		margin-bottom: 20px;
+	}
 
-h2 {
-	margin-bottom: 20px;
+	&__navigator {
+		display: none;
+	}
+
+	@media screen and (min-width: 1024px) {
+		@include flex-content(flex, row, center, top);
+	
+		&__sections {
+			max-width: 800px;
+		}
+
+		&__navigator {
+			display: block;
+		}
+	}
 }

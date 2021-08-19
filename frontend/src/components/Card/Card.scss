@@ -4,14 +4,9 @@
 
 .card {
 	@include flex-content(flex, column, center, center);
-	width: 300px;
+	width: 100%;
 	height: 400px;
 	background-color: $color-blue-light;
-	margin: 0 30px;
-	box-shadow: -10px 10px 10px $color-shadow;
-	position: -webkit-sticky;
-	position: sticky;
-	top: 60px;
 
 	&__image {
 		width: 200px;
@@ -54,6 +49,15 @@
 		a:hover, a:active {
 			color: transparentize($color: $color-black, $amount: 0.5)
 		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		width: 300px;
+		margin: 0 30px;
+		box-shadow: -10px 10px 10px $color-shadow;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 60px;
 	}
 }
 

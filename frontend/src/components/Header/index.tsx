@@ -1,11 +1,17 @@
 import React from 'react';
+import LateralNavigator from '../LateralNavigator';
 import './Header.scss';
 
 function Header() {
   return (
-    <header className="header">
-      <span className="logo">vetToDev</span>
-    </header>
+    <>
+      <header className="header">
+        <span className="header__logo">vetToDev</span>
+      </header>
+      <div className="header__navigator">
+        <LateralNavigator />
+      </div>
+    </>
   );
 }
 

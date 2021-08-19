@@ -2,28 +2,41 @@
 @import './../../styles/mixin.scss';
 
 .awards {
-	@include section;
-}
+	@include small-section;
 
-.award {
-	@include flex-content(flex, column);
-
-	&__title {
-		@include font;
+	.award {
+		@include flex-content(flex, column);
+	
+		&__title {
+			@include font;
+		}
+	
+		&__information {
+			@include flex-content(flex, column);
+			@include font(18px, lighter);
+		}
+	
+		&__description {
+			margin-right: 20px;
+		}
+	
+		&__date {
+			@include font(16px);
+			margin: 5px 0;
+		}
 	}
 
-	&__information {
-		@include flex-content(flex, row);
-		@include font(18px, lighter);
-	}
+	@media screen and (min-width: 1024px) {
+		@include section;
 
-	&__description {
-		margin-right: 20px;
-	}
+		.award__information {
+			@include flex-content(flex, row, space-between);
+			@include font(18px, lighter);
+		}
 
-	&__date {
-		@include font(16px);
-		margin-left: 20px;
-		margin-top: 2px;
+		.award__date {
+			@include font(16px);
+			margin: 0;
+		}
 	}
 }
