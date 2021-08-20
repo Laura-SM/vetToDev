@@ -1,3 +1,18 @@
-footer {
-	height: 50px;
+@import './../../styles/colors.scss';
+@import './../../styles/global.scss';
+@import './../../styles/mixin.scss';
+
+.footer {
+	height: 80px;
+	@include flex-content(flex, row, center, center);
+
+	&__description {
+		@include font(16px, lighter);
+	}
+
+	@media screen and (min-width: 1024px) {
+		&__description {
+			margin-left: 250px;
+		}
+	}
 }
