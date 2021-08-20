@@ -3,8 +3,7 @@
 @import './../../styles/mixin.scss';
 
 .lateralNavigator {
-	// @include flex-content(flex, row, center, center);
-	
+		
 	&__list {
 		@include flex-content;
 		list-style: none;	
@@ -20,33 +19,13 @@
 		margin: 10px;
 	}
 
+	&__tooltip {
+		display: none;
+	}
+
 	.material-icons-outlined { 
 		font-size: 30px;
 		margin: 10px;
-	}
-
-	&__tooltip {
-		visibility: hidden;
-		width: 150px;
-		height: 35px;
-		background-color: $color-white;
-		@include font(18px, lighter);
-		text-align: center;
-		padding: 5px 0;
-		position: absolute;
-		z-index: 1;
-		box-shadow: -10px 10px 10px $color-shadow;
-		right: 110%;
-		opacity: 0;
-		transition-property: opacity;
-		transition-duration: 0.3s;
-		transition-timing-function: linear;
-		transition-delay: 0.1s;
-	}
-	
-	&__item:hover &__tooltip {
-		visibility: visible;
-		opacity: 1;
 	}
 
 	a:link, a:visited {
@@ -69,6 +48,39 @@
 
 		&__list {
 			@include flex-content(flex, column, center, center);
+		}
+
+		&__tooltip {
+			display: inline;
+			visibility: hidden;
+			width: 150px;
+			height: 35px;
+			background-color: $color-white;
+			@include font(18px, lighter);
+			text-align: center;
+			padding: 5px 0;
+			margin-top: 5px;
+			position: absolute;
+			z-index: 1;
+			box-shadow: -10px 10px 10px $color-shadow;
+			right: 110%;
+			opacity: 0;
+			transition-property: opacity;
+			transition-duration: 0.3s;
+			transition-timing-function: linear;
+			transition-delay: 0.1s;
+		}
+		
+		&__item:hover &__tooltip {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	@media screen and (min-width: 1550px) {
+		&__tooltip {
+			right:unset;
+			left: 110%;
 		}
 	}
 }
