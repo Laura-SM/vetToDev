@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Laura-SM/vetToDev/static/css/main.57a14695.chunk.css",
+    "main.js": "/Laura-SM/vetToDev/static/js/main.ad2d487d.chunk.js",
+    "main.js.map": "/Laura-SM/vetToDev/static/js/main.ad2d487d.chunk.js.map",
+    "runtime-main.js": "/Laura-SM/vetToDev/static/js/runtime-main.efe5f936.js",
+    "runtime-main.js.map": "/Laura-SM/vetToDev/static/js/runtime-main.efe5f936.js.map",
+    "static/js/2.b08cfb6e.chunk.js": "/Laura-SM/vetToDev/static/js/2.b08cfb6e.chunk.js",
+    "static/js/2.b08cfb6e.chunk.js.map": "/Laura-SM/vetToDev/static/js/2.b08cfb6e.chunk.js.map",
+    "index.html": "/Laura-SM/vetToDev/index.html",
+    "static/css/main.57a14695.chunk.css.map": "/Laura-SM/vetToDev/static/css/main.57a14695.chunk.css.map",
+    "static/js/2.b08cfb6e.chunk.js.LICENSE.txt": "/Laura-SM/vetToDev/static/js/2.b08cfb6e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.efe5f936.js",
+    "static/js/2.b08cfb6e.chunk.js",
+    "static/css/main.57a14695.chunk.css",
+    "static/js/main.ad2d487d.chunk.js"
+  ]
+}
