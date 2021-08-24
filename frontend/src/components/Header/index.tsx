@@ -1,6 +1,6 @@
 import React from 'react';
-import LateralNavigator from '../LateralNavigator';
-import './Header.scss';
+import Navigator from '../Navigator';
+import './style.scss';
 
 function Header() {
   return (
@@ -9,7 +9,7 @@ function Header() {
         <span className="header__logo">vetToDev</span>
       </header>
       <div className="header__navigator">
-        <LateralNavigator />
+        <Navigator />
       </div>
     </>
   );

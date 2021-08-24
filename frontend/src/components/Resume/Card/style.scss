@@ -1,0 +1,62 @@
+@import './../../../styles/colors.scss';
+@import './../../../styles/mixin.scss';
+
+.card {
+	@include flex-content(flex, column, center, center);
+	width: 100%;
+	height: 400px;
+	background-color: $color-blue-light;
+
+	&__image {
+		width: 200px;
+		border-radius: 50%;
+		margin: 10px;
+	}
+
+	&__name {
+		@include font(20px, bold);
+		margin-top: 20px;
+		margin-bottom: 10px;
+	}
+
+	&__profession {
+		@include font(20px, lighter);
+		color: $color-black;
+		margin: 10px;
+	}
+	
+	&__icons {
+		margin: 10px;
+		@include flex-content(flex, row, center, center);
+
+		.fa-github {
+			font-size: 22px;
+			margin: 10px;
+		}
+		
+		.fa-linkedin {
+			font-size: 22px;
+			margin: 10px;
+		}
+		
+		a:link, a:visited {
+			color: inherit;
+			text-decoration: none;
+			cursor: pointer;
+		}
+		
+		a:hover, a:active {
+			color: transparentize($color: $color-black, $amount: 0.5)
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		width: 300px;
+		margin: 0 30px;
+		box-shadow: -10px 10px 10px $color-shadow;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 60px;
+	}
+}
+

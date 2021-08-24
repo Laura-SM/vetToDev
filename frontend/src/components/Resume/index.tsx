@@ -1,15 +1,15 @@
 import React from 'react';
-import Card from '../Card';
-import AboutMe from '../AboutMe';
-import Experience from '../Experience';
-import Education from '../Education';
-import Competencies from '../Competencies';
-import Languages from '../Languages';
-import Awards from '../Awards';
-import Blog from '../Blog';
-import Contact from '../Contact';
-import LateralNavigator from '../LateralNavigator';
-import './Resume.scss';
+import Card from './Card';
+import AboutMe from './AboutMe';
+import Experience from './Experience';
+import Education from './Education';
+import Competencies from './Competencies';
+import Languages from './Languages';
+import Awards from './Awards';
+import Blog from './Blog';
+import Contact from './Contact';
+import Navigator from '../Navigator';
+import './style.scss';
 
 function Resume() {
   return (
@@ -28,7 +28,7 @@ function Resume() {
         <Contact />
       </div>
       <div className="resume__navigator">
-        <LateralNavigator />
+        <Navigator />
       </div>
     </div>
   );

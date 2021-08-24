@@ -1,0 +1,13 @@
+@import './../../../styles/mixin.scss';
+
+.aboutMe {
+	@include small-section;
+
+	p {
+		@include font(20px, lighter);
+	}
+
+	@media screen and (min-width: 1024px) {
+		@include section;
+	}
+}
