@@ -1,5 +1,5 @@
 import React from 'react';
-import './LateralNavigator.scss';
+import './style.scss';
 
 function LateralNavigator() {
   return (
