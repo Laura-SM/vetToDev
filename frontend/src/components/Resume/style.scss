@@ -1,6 +1,6 @@
 @import './../../styles/colors.scss';
-@import './../../styles/global.scss';
 @import './../../styles/mixin.scss';
+
 
 .resume {
 	@include flex-content(flex, column);
