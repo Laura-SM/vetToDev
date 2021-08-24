@@ -1,4 +1,5 @@
 import React from 'react';
+import lauraSabater from '../../assets/lauraSabater.jpeg';
 import './style.scss';
 
 function LateralNavigator() {
@@ -7,7 +8,7 @@ function LateralNavigator() {
       <ul className="lateralNavigator__list">
         <li className="lateralNavigator__item">
           <a href="#aboutMe">
-            <img className="lateralNavigator__image" src="lauraSabater.jpeg" alt="Laura Sabater" />
+            <img className="lateralNavigator__image" src={lauraSabater} alt="Laura Sabater" />
           </a>
           <span className="lateralNavigator__tooltip">About me</span>
         </li>
