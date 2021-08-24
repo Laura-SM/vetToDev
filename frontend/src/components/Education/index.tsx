@@ -1,6 +1,6 @@
 import React from 'react';
 import RESUME_DATA from '../../constants/resumeData';
-import './Education.scss';
+import './style.scss';
 
 function Education() {
   return (
