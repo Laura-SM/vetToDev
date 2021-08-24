@@ -8,7 +8,7 @@ import Languages from './Languages';
 import Awards from './Awards';
 import Blog from './Blog';
 import Contact from './Contact';
-import LateralNavigator from '../LateralNavigator';
+import Navigator from '../Navigator';
 import './style.scss';
 
 function Resume() {
@@ -28,7 +28,7 @@ function Resume() {
         <Contact />
       </div>
       <div className="resume__navigator">
-        <LateralNavigator />
+        <Navigator />
       </div>
     </div>
   );
