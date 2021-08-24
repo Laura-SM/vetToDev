@@ -1,12 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
 import RESUME_DATA from '../../constants/resumeData';
-import './Card.scss';
+import lauraSabater from '../../assets/lauraSabater.jpeg';
+import './style.scss';
 
 function Card() {
   return (
     <div className="card">
-      <img className="card__image" alt="Laura Sabater" src="lauraSabater.jpeg" />
+      <img className="card__image" alt="Laura Sabater" src={lauraSabater} />
       <span className="card__name">{RESUME_DATA.name.toUpperCase()}</span>
       <span className="card__profession">{RESUME_DATA.profession}</span>
       <div className="card__icons">
