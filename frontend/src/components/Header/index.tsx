@@ -1,6 +1,6 @@
 import React from 'react';
 import LateralNavigator from '../LateralNavigator';
-import './Header.scss';
+import './style.scss';
 
 function Header() {
   return (
