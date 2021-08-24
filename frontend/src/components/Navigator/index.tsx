@@ -2,7 +2,7 @@ import React from 'react';
 import lauraSabater from '../../assets/lauraSabater.jpeg';
 import './style.scss';
 
-function LateralNavigator() {
+function Navigator() {
   return (
     <nav className="lateralNavigator">
       <ul className="lateralNavigator__list">
@@ -74,4 +74,4 @@ function LateralNavigator() {
   );
 }
 
-export default LateralNavigator;
+export default Navigator;
