@@ -1,6 +1,6 @@
 import React from 'react';
 import RESUME_DATA from '../../constants/resumeData';
-import './Experience.scss';
+import './style.scss';
 
 function Experience() {
   return (
