@@ -9,7 +9,7 @@ import Awards from '../Awards';
 import Blog from '../Blog';
 import Contact from '../Contact';
 import LateralNavigator from '../LateralNavigator';
-import './Resume.scss';
+import './style.scss';
 
 function Resume() {
   return (
