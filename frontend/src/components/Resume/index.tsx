@@ -1,13 +1,13 @@
 import React from 'react';
-import Card from '../Card';
-import AboutMe from '../AboutMe';
-import Experience from '../Experience';
-import Education from '../Education';
-import Competencies from '../Competencies';
-import Languages from '../Languages';
-import Awards from '../Awards';
-import Blog from '../Blog';
-import Contact from '../Contact';
+import Card from './Card';
+import AboutMe from './AboutMe';
+import Experience from './Experience';
+import Education from './Education';
+import Competencies from './Competencies';
+import Languages from './Languages';
+import Awards from './Awards';
+import Blog from './Blog';
+import Contact from './Contact';
 import LateralNavigator from '../LateralNavigator';
 import './style.scss';
 

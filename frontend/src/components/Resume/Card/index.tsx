@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import React from 'react';
-import RESUME_DATA from '../../constants/resumeData';
-import lauraSabater from '../../assets/lauraSabater.jpeg';
+import RESUME_DATA from '../../../constants/resumeData';
+import lauraSabater from '../../../assets/lauraSabater.jpeg';
 import './style.scss';
 
 function Card() {
