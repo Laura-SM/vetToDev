@@ -6,7 +6,7 @@ function Header() {
   return (
     <>
       <header className="header">
-        <span className="header__logo">vetToDev</span>
+        <span className="header__logo">VetToDev</span>
       </header>
       <div className="header__navigator">
         <Navigator />

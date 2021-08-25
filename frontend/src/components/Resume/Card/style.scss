@@ -1,11 +1,19 @@
 @import './../../../styles/colors.scss';
 @import './../../../styles/mixin.scss';
 
+
 .card {
-	@include flex-content(flex, column, center, center);
-	width: 100%;
-	height: 400px;
-	background-color: $color-blue-light;
+	background-image: radial-gradient($color-black, 25%, transparent 10%);
+	background-size: 15px 15px;
+	margin: 10px 0;
+	padding: 15px;
+
+	&__content {
+		@include flex-content(flex, column, center, center);
+		width: 100%;
+		height: 400px;
+		background-color: $color-blue-medium;
+	}
 
 	&__image {
 		width: 200px;
@@ -51,12 +59,16 @@
 	}
 
 	@media screen and (min-width: 1024px) {
-		width: 300px;
 		margin: 0 30px;
-		box-shadow: -10px 10px 10px $color-shadow;
+		padding: 30px;
+		padding-left: 75px;
 		position: -webkit-sticky;
 		position: sticky;
 		top: 60px;
+		
+		&__content {
+			width: 300px;
+			border: solid 3px $color-black;
+		}
 	}
 }
-

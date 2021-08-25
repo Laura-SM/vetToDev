@@ -2,7 +2,7 @@
 
 .aboutMe {
 	@include small-section;
-
+	
 	p {
 		@include font(20px, lighter);
 	}
