@@ -11,7 +11,7 @@ function Blog() {
         If you are curious about my posts, visit my blog. I will appreciate any comment or feedback.
       </p>
       <div className="blog__link">
-        <a href="https://blog.vettodev.com" target="_blank" aria-label="blog-link" title="Laura's blog" rel="noreferrer">Visit my blog!</a>
+        <a className="blog__anchor" href="https://blog.vettodev.com" target="_blank" aria-label="blog-link" title="Laura's blog" rel="noreferrer">Visit my blog!</a>
       </div>
     </div>
   );

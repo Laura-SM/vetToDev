@@ -32,16 +32,12 @@
 		margin: 10px;
 	}
 
-	a:link, a:visited {
+	&__anchor:link, &__anchor:visited {
 		color: inherit;
 		text-decoration: none;
 		cursor: pointer;
 	}
 	
-	a:hover, a:active {
-		color: transparentize($color: $color-black, $amount: 0.5)
-	}
-
 	@media screen and (min-width: 400px) {
 		overflow-y: unset;
 		overflow-x: unset;
@@ -97,5 +93,11 @@
 			right: unset;
 			left: 130%;
 		}
+	}
+}
+
+@media (hover) {
+	.navigator__anchor:hover {
+		color: transparentize($color: $color-black, $amount: 0.5)
 	}
 }

@@ -7,13 +7,13 @@ function Navigator() {
     <nav className="navigator">
       <ul className="navigator__list">
         <li className="navigator__item">
-          <a href="#aboutMe">
+          <a className="navigator__anchor" href="#aboutMe">
             <img className="navigator__image" src={lauraSabater} alt="Laura Sabater" />
           </a>
           <span className="navigator__tooltip">About me</span>
         </li>
         <li className="navigator__item">
-          <a href="#experience">
+          <a className="navigator__anchor" href="#experience">
             <span className="material-icons-outlined md-36">
               business_center
             </span>
@@ -21,7 +21,7 @@ function Navigator() {
           <span className="navigator__tooltip">Experience</span>
         </li>
         <li className="navigator__item">
-          <a href="#education">
+          <a className="navigator__anchor" href="#education">
             <span className="material-icons-outlined">
               school
             </span>
@@ -29,7 +29,7 @@ function Navigator() {
           <span className="navigator__tooltip">Education</span>
         </li>
         <li className="navigator__item">
-          <a href="#competencies">
+          <a className="navigator__anchor" href="#competencies">
             <span className="material-icons-outlined md-36">
               verified
             </span>
@@ -37,7 +37,7 @@ function Navigator() {
           <span className="navigator__tooltip">Competencies</span>
         </li>
         <li className="navigator__item">
-          <a href="#languages">
+          <a className="navigator__anchor" href="#languages">
             <span className="material-icons-outlined md-36">
               language
             </span>
@@ -45,7 +45,7 @@ function Navigator() {
           <span className="navigator__tooltip">Languages</span>
         </li>
         <li className="navigator__item">
-          <a href="#awards">
+          <a className="navigator__anchor" href="#awards">
             <span className="material-icons-outlined md-36">
               emoji_events
             </span>
@@ -53,7 +53,7 @@ function Navigator() {
           <span className="navigator__tooltip">Awards</span>
         </li>
         <li className="navigator__item">
-          <a href="#blog">
+          <a className="navigator__anchor" href="#blog">
             <span className="material-icons-outlined md-36">
               speaker_notes
             </span>
@@ -61,7 +61,7 @@ function Navigator() {
           <span className="navigator__tooltip">Blog</span>
         </li>
         <li className="navigator__item">
-          <a href="#contact">
+          <a className="navigator__anchor" href="#contact">
             <span className="material-icons-outlined md-36">
               email
             </span>
