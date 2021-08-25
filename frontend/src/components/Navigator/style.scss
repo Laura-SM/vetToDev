@@ -66,14 +66,14 @@
 			width: 150px;
 			height: 35px;
 			background-color: $color-white;
-			border: solid 1px $color-shadow;
+			border: solid 1px $color-gray-light;
 			@include font(18px, lighter);
 			text-align: center;
 			padding: 5px 0;
 			margin-top: 5px;
 			position: absolute;
 			z-index: 1;
-			box-shadow: -5px 5px $color-shadow;
+			box-shadow: -5px 5px $color-gray-light;
 			right: 130%;
 			opacity: 0;
 			transition-property: opacity;
