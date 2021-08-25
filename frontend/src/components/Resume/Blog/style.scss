@@ -13,25 +13,23 @@
 		margin-top: 20px;
 	}
 
-	a:link, a:visited {
-		background-color: $color-blue-light;
+	&__anchor:link, &__anchor:visited {
+		background-color: $color-blue-medium;
 		@include font;
 		padding: 10px 20px;
 		text-align: center;
 		text-decoration: none;
 		display: inline-block;
-	}
-	
-	a:hover{
-		box-shadow: -5px 5px 5px $color-shadow;
-	}
-	
-	a:active {
-		box-shadow: none;
-		transform: translateY(4px);
+		border-radius: 5px;
 	}
 
 	@media screen and (min-width: 1024px) {
 		@include section;
+	}
+}
+
+@media (hover) {
+	.blog__anchor:hover{
+		background-color: $color-blue-light;
 	}
 }

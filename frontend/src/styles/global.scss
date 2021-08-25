@@ -12,13 +12,5 @@ html, body {
 }
 
 body {
-	background-color: $color-gray-medium;	
-	
-	@media screen and (min-width: 768px) {
-		background-image: linear-gradient(45deg, transparent 50%, $color-blue-light 50%), linear-gradient(-60deg, $color-gray-dark 50%, transparent 50%), linear-gradient(-130deg, transparent 50%, $color-gray-dark 50%), ;
-		background-size: 600px 600px, 250px 250px, 225px 250px;
-		background-repeat:no-repeat;
-		background-position-x: right, 0, 250px;
-		background-attachment: fixed;
-	}
+	background-image: linear-gradient( $color-blue-light, $color-blue-dark);
 }

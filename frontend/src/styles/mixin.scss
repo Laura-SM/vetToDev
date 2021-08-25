@@ -14,14 +14,17 @@
 	line-height: $line-height
 }
 
-@mixin small-section ($background-color: $color-white, $padding: 30px 20px 20px 20px, $border-bottom: solid 1px $color-gray-dark, $scroll-margin-top: 50px ) {
+@mixin small-section ($background-color: $color-white, $padding: 30px 20px 20px 20px, $border-bottom: solid 1px $color-gray-dark, $scroll-margin-top: 65px, $margin-bottom: 10px, $margin-left: 10px, $margin-right: 10px) {
 	background-color: $background-color;
 	padding: $padding;
 	border-bottom: $border-bottom;
 	scroll-margin-top: $scroll-margin-top;
+	margin-bottom: $margin-bottom;
+	margin-left: $margin-left;
+	margin-right: $margin-right;
 }
 
-@mixin section ($background-color: $color-white, $border-style: solid, $border-width: 1px, $border-color: $color-gray-dark, $padding: 50px, $margin-bottom: 10px, $scroll-margin-top: 10px) {
+@mixin section ($background-color: $color-white, $border-style: solid, $border-width: 1px, $border-color: $color-black, $padding: 50px, $margin-bottom: 30px, $scroll-margin-top: 10px, $box-shadow: -10px 10px $color-black) {
 	background-color: $background-color;
 	border-style: $border-style;
 	border-width: $border-width;
@@ -29,4 +32,5 @@
 	padding: $padding;
 	margin-bottom: $margin-bottom;
 	scroll-margin-top: $scroll-margin-top;
+	box-shadow: $box-shadow;
 }

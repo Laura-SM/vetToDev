@@ -11,24 +11,24 @@
 			margin: 5px;
 		
 			.material-icons-outlined {
-				color: $color-blue-dark;
-				font-size: 18px;
+				color: $color-blue-medium;
+				font-size: 24px;
 			}
 			
 			.fa-linkedin {
-				color: $color-blue-dark;
-				font-size: 18px;
+				color: $color-blue-medium;
+				font-size: 24px;
 			}
 			
 			.fa-github {
-				color: $color-blue-dark;
-				font-size: 18px;
+				color: $color-blue-medium;
+				font-size: 24px;
 			}	
 		}
 		
 		dd {
 			margin: 5px 15px;
-			@include font(18px, lighter);
+			@include font(20px, lighter);
 	
 			a:link, a:visited {
 				color: inherit;
